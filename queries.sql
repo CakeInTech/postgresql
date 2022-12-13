@@ -23,3 +23,8 @@ SELECT * FROM animals;
 UPDATE animals SET species = 'Pokemon' WHERE species is NULL;
 COMMIT;
 SELECT * FROM animals;
+
+BEGIN;
+DELETE FROM animals; 
+ROLLBACK;
+SELECT * FROM animals;
