@@ -44,3 +44,10 @@ SELECT AVG(weight_kg) FROM animals;
 SELECT MAX(escape_attempts), neutered FROM animals GROUP BY neutered;
 SELECT Min(weight_kg), Max(weight_kg), COUNT(weight_kg), species FROM animals GROUP BY species;
 SELECT AVG(escape_attempts), species, date_of_birth FROM animals GROUP BY species, date_of_birth HAVING date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
+
+
+----
+
+SELECT animals.name FROM animals JOIN owners ON animals.owners_id = owners.id WHERE owners.full_name = 'Melody Pond';
+
+SELECT * FROM animals JOIN species ON animals.species_id = species.id WHERE species.name = 'Pokemon';
