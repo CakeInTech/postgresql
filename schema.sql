@@ -18,3 +18,28 @@ CREATE TABLE animals
 
 ALTER TABLE animals
 ADD species VARCHAR(50);
+
+----
+
+CREATE TABLE owners(
+  id BIGSERIAL PRIMARY KEY NOT NULL,
+  full_name varchar(255) NOT NULL,
+  age int NOT NULL
+);
+
+CREATE TABLE species(
+  id bigsERIAL PRIMARY KEY NOT NULL,
+  name varchar(255) NOT NULL
+);
+
+CREATE SEQUENCE temp;
+ALTER TABLE animals ALTER COLUMN id SET NOT NULL;
+ALTER TABLE animals ALTER COLUMN id SET DEFAULT nextval('temp_id_seq');
+ALTER SEQUENCE temp OWNED BY animals.id;
+
+ALTER TABLE animals 
+DROP COLUMN species;
+
+ALTER TABLE animals ADD species_id BIGINt REFERENCES species(id);
+
+ALTER TABLE animals ADD owners_id BIGINT REFERENCES owners(id);
