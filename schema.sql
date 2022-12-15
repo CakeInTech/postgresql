@@ -15,3 +15,6 @@ CREATE TABLE animals
     weight_kg numeric,
     CONSTRAINT animals_pkey PRIMARY KEY (id)
 );
+
+ALTER TABLE animals
+ADD species VARCHAR(50);
