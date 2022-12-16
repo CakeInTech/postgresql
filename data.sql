@@ -45,10 +45,10 @@ UPDATE animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blosso
 UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon'); 
 
 INSERT INTO vets(name, age, date_of_graduation)
-VALUES ('Vet William Tatcher', '45',  date '2000-04-23'),
-('Vet Maisy Smith', '26',  date '2019-01-17'),
-('Vet Stephanie Mendez', '64',  date '1981-05-04'),
-('Vet Jack Harkness', '38',  date '2008-06-08');
+VALUES ('William Tatcher', '45',  date '2000-04-23'),
+('Maisy Smith', '26',  date '2019-01-17'),
+('Stephanie Mendez', '64',  date '1981-05-04'),
+('Jack Harkness', '38',  date '2008-06-08');
 
 INSERT INTO specialization(vets_id, species_id)
 VALUES ('1', '1'), ('3', '1'), ('3', '2'), ('4', '2');
