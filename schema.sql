@@ -62,3 +62,12 @@ CREATE TABLE visits (
     animals_id BIGINT REFERENCES animals (id),
     date_of_visit DATE NOT NULL
 );
+
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+CREATE INDEX animal_id ON visits(animal_id);
+CREATE INDEX vet_id ON visits(vet_id);
+CREATE INDEX email ON owners(email);
