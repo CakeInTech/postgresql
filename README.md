@@ -67,22 +67,25 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+![EER Diagram](./EER%20Diagram/image.png)
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
-
 ### Setup
+
 ```
 git clone git@github.com:MohamedCK/postgresql.git
 ```
+
 ```
 ### Usage
 ```
-Use psql command after you install the postgres.
 
+Use psql command after you install the postgres.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +98,6 @@ Use psql command after you install the postgres.
 - [LinkedIn](https://www.linkedin.com/in/mohamed-abdulhakim-2868521b6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,12 +115,9 @@ Feel free to check the [issues page](../../issues/).
 
 > If you like this project don't forget to give a star to support the author.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
