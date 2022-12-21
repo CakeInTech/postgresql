@@ -1,3 +1,4 @@
+-- Clinic Database Schema
 CREATE TABLE medical_historeis (
   id BIGSERIAL NOT NULL PRIMARY KEY,
   admitted_at TIMESTAMP,
@@ -18,3 +19,8 @@ CREATE TABLE patients (
   name VARCHAR(100) NOT NULL,
   date_of_birth DATE NOT NULL 
 );
+
+-- Index Clauses 
+CREATE INDEX patient_id ON patients(id);
+CREATE INDEX medical_history_id ON medical_historeis(id);
+CREATE INDEX invoices_id ON invoices(id);
