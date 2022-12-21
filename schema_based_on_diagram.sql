@@ -39,3 +39,4 @@ CREATE TABLE tretments (
 CREATE INDEX patient_id ON patients(id);
 CREATE INDEX medical_history_id ON medical_historeis(id);
 CREATE INDEX invoices_id ON invoices(id);
+CREATE INDEX treatment_id ON treatment(id);
