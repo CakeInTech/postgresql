@@ -20,6 +20,21 @@ CREATE TABLE patients (
   date_of_birth DATE NOT NULL 
 );
 
+CREATE TABLE invoice_items (
+  id BIGSERIAL NOT NULL PRIMARY KEY,
+  unit_price DECIMAL NOT NULL,
+  quantity BIGSERIAL NOT NULL,
+  total_price DECIMAL NOT NULL,
+  invoices_id INT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+  treatment_id INT NULL REFERENCES treatment(id) ON DELETE CASCADE
+)
+
+CREATE TABLE tretments (
+  id BIGSERIAL NOT NULL PRIMARY KEY, 
+  type VARCHAR(40) NOT NULL,
+  name VARCHAR(40) NOT NULL
+)
+
 -- Index Clauses 
 CREATE INDEX patient_id ON patients(id);
 CREATE INDEX medical_history_id ON medical_historeis(id);
